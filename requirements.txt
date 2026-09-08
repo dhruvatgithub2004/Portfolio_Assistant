@@ -1,0 +1,10 @@
+streamlit
+python-dotenv
+langchain
+langchain-community
+langchain-core
+langchain-openai
+langchain-text-splitters
+openai
+faiss-cpu
+rank_bm25
