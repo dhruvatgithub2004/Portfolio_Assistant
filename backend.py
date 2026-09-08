@@ -35,7 +35,7 @@ if not OPENAI_API_KEY:
 
 KNOWLEDGE_BASE_PATH = os.getenv(
     "KNOWLEDGE_BASE_PATH",
-    r"C:\Resume_Chatbot\dhruv_desai_knowledge_base.txt",
+    r"https://github.com/dhruvatgithub2004/Portfolio_Assistant/blob/main/dhruv_desai_knowledge_base.txt",
 )
 
 EMBEDDING_MODEL = "text-embedding-3-small"
