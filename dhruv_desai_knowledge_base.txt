@@ -35,8 +35,7 @@ His portfolio site also has a contact form with fields for Name, Email, Subject,
 SECTION: WORK EXPERIENCE — CURRENT ROLE
 ================================================================================
 Current Role: RTIM Business Architect
-Employer: Elitser Technology
-Deputed/Client: ENBD (Emirates NBD)
+Employer: Elitser Technologies
 Duration: April 2026 – Present
 Location: Dubai, UAE
 
