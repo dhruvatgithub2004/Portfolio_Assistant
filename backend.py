@@ -10,6 +10,7 @@ The Streamlit frontend (frontend.py) imports `RAGChatbot` from this module.
 import os
 import re
 from collections.abc import Iterator
+from pathlib import Path
 
 from dotenv import load_dotenv
 
@@ -33,9 +34,15 @@ if not OPENAI_API_KEY:
         "(see .env.example) or set it as an environment variable."
     )
 
+# Default: the knowledge base file that ships alongside this script in the repo.
+# This works regardless of where the repo is cloned/deployed (local machine,
+# Streamlit Cloud, another server, etc.) and regardless of OS.
+BASE_DIR = Path(__file__).resolve().parent
+DEFAULT_KNOWLEDGE_BASE_PATH = BASE_DIR / "dhruv_desai_knowledge_base.txt"
+
 KNOWLEDGE_BASE_PATH = os.getenv(
     "KNOWLEDGE_BASE_PATH",
-    r"https://github.com/dhruvatgithub2004/Portfolio_Assistant/blob/main/dhruv_desai_knowledge_base.txt",
+    str(DEFAULT_KNOWLEDGE_BASE_PATH),
 )
 
 EMBEDDING_MODEL = "text-embedding-3-small"
